@@ -31,7 +31,11 @@
               <th scope="row">
                   <img width="120" class="img-thumbnail" src={{url_for('static', filename=c.image)}}>
               </th>
-              <td>{{c.name}}</td>
+              <td>
+                <a href="/products/{{c.id}}">
+                  {{c.name}}
+                </a>
+              </td>
               <td>{{ "{:,.0f}".format(c.price) }} VND</td>
               <td>{{c.description}}</td>
             </tr>

@@ -15,10 +15,10 @@
 <body>
     <h2 class="text-white bg-primary mb-3 text-center">Web ban hang</h2>
     <div class="container">
-        <ul>
-            <li><a href="/products"> Tat ca san pham </a> </li>
-            {% for c in products %}
-            <li><a href="#">{{c.name}}</a></li>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="/products"> Tat ca san pham </a> </li>
+            {% for c in category %}
+            <li class="list-group-item"><a href="/products?category={{c.id}}">{{c.category}}</a></li>
             {% endfor %}
         </ul>
     </div>
